@@ -42,7 +42,7 @@ For those of you that are proficient w/ Python programming, you'll need Python 3
 $ pip install tensorflow
 ```
 
-or w/ CUDA as: **TO BE DONE**
+or w/ CUDA as:
 
 ```bash
 $ pip install tensorflow-gpu
@@ -60,6 +60,28 @@ $ cd notebook
 $ docker build -t notebook .
 $ docker run -it -p 8888:8888 -p 6006:6006 -v /$(pwd)/notebooks:/notebooks --name tf notebook /bin/bash
 ```
+<a name="docker-installation-GPU"></a>
+### Docker installation with a GPU
+
+Ceck Nvidia driver are correctly installed and install nvidia-modprobe
+
+```bash
+$ sudo apt install nvidia-modprobe
+```
+If you want the **GPU** version use the Dockerfile **Dockerfile_GPU**
+
+Remember to run the container you need nvidia-docker you can install from https://github.com/NVIDIA/nvidia-docker
+
+```bash
+$ cd
+$ git clone https://github.com/fcollova/notebook.git
+$ cd notebook
+$ docker build -t notebook-gpu .
+$ docker run -it -p 8888:8888 -p 6006:6006 -v /$(pwd)/notebooks:/notebooks --name tf-gpu notebook-gpu /bin/bash
+```
+
+
+
 
 Note that you can skip the build step and download from docker hub instead like so:
 
