@@ -77,7 +77,7 @@ $ cd
 $ git clone https://github.com/fcollova/notebook.git
 $ cd notebook
 $ docker build -t notebook-gpu .
-$ docker run -it -p 8888:8888 -p 6006:6006 -v /$(pwd)/notebooks:/notebooks --name tf-gpu notebook-gpu /bin/bash
+$ nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /$(pwd)/notebooks:/notebooks --name tf-gpu notebook-gpu /bin/bash
 ```
 
 
