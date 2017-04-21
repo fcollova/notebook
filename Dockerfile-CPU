@@ -1,3 +1,4 @@
+#Dockerfile CPU
 FROM ubuntu:14.04
 MAINTAINER francesco.collova@gmail.com
 

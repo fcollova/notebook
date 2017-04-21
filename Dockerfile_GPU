@@ -1,3 +1,4 @@
+#Dockerfile GPU
 FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu14.04
 MAINTAINER francesco.collova@gmail.com
 
