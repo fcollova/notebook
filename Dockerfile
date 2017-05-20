@@ -40,6 +40,8 @@ RUN pip install tensorflow
 
 RUN pip install keras
 
+RUN conda install pytorch torchvision -c soumith -y
+
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run_jupyter.sh /
 
