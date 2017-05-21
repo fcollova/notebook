@@ -2,7 +2,7 @@
 # Tensorflow notebook
 
 This repository is a Docker generetion of a Jupyter notebook environment containing:
-Tensorflow and Keras
+Tensorflow, Keras and Pytorch
 
 
 
